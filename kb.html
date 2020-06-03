@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+      <div class="wrapper">
+        <div class="light"></div>
+        <div class="card front">
+          <!-- <div class="logo k"></div> -->
+          <div class="company-text k">POSTERSCOPE</div>
+        </div>
+        <div class="card back">
+          <div class="left">
+            <div class="name-text">KIRTI BOKIL</div>
+            <div class="role-text">Senior Executive - Accounts</div>
+          </div>
+          <div class="right">
+            <div>022-6808 8100</div>
+            <div>apscience.com</div>
+            <div>Kirti.Bokil@posterscope.com</div>
+            <div> 6th Floor, Poonam Chambers, B Wing, Mumbai</div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.onmousemove = e => {
+          document.querySelector(".wrapper").style.transform = `translate(-${e.clientX * 0.04}px, -${e.clientY * 0.04}px)`;
+          document.querySelector(".light").style.transform = `translate(-${e.clientX * 0.1}px, -${e.clientY * 0.1}px)`;
+        }
+      </script>
+  </body>
+</html>
